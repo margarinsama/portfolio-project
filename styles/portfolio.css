@@ -1,17 +1,31 @@
 :root {
-    --primary-color: #EC255A;
+    --primary-accent-color: #EC255A;
+    --secondary-accent-color: #58A4B0;
     --text-color: #161853;
     --secondary-text-color: #292C6D;
     --h1-font: 'Passion One', cursive;
     --h2-font: 'Nobile', sans-serif;;
     --main-font: 'Raleway', sans-serif;;
 }
+
+body {
+    background-color: #FAEDF0 !important;
+}
+
+img {
+    border-radius: 4px;
+}
+
+li {
+    font-family: var(--main-font);
+}
+
 .page-title {
-    padding-left: 24px;
+    font-family: var(--main-font);
 }
 
 .hero {
-    background-color: #FAEDF0;
+    
     padding: 150px 0 150px 100px;
 }
 
@@ -36,11 +50,53 @@
     margin-bottom: 0;
 }
 .contact-btn {
-    background-color: var(--primary-color);
+    background-color: var(--primary-accent-color);
     color: #FAEDF0;
     text-decoration: none;
     padding: 6px 12px;
     font-family: var(--main-font);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
+    transition: ease-in-out 0.4s;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.contact-btn:hover {
+    color: #FAEDF0;
+    background-color: var(--secondary-text-color);
+}
+
+.about-btn {
+    background-color: var(--secondary-accent-color);
+    color: #FAEDF0;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 20px;
+    transition: ease-in-out 0.4s;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.about-btn:hover {
+    color: #FAEDF0;
+    background-color: var(--secondary-text-color);
+}
+@media (max-width: 600px) {
+    .hero {
+        text-align: center;
+        padding-left: 0;
+    }
+    .hero h1{
+        font-size: 64px;
+    }
+    .hero h2 {
+        font-size: 30px;
+    }
+    .hero p {
+        font-size: 24px;
+    }
+    
 }
