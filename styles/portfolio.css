@@ -1,4 +1,46 @@
-div {
-    padding: 50px;
-    background-color: blanchedalmond;
+:root {
+    --primary-color: #EC255A;
+    --text-color: #161853;
+    --secondary-text-color: #292C6D;
+    --h1-font: 'Passion One', cursive;
+    --h2-font: 'Nobile', sans-serif;;
+    --main-font: 'Raleway', sans-serif;;
+}
+.page-title {
+    padding-left: 24px;
+}
+
+.hero {
+    background-color: #FAEDF0;
+    padding: 150px 0 150px 100px;
+}
+
+.hero h1, h2 {
+    color: var(--text-color);
+}
+.hero h1 {
+    font-size: 81px;
+    font-family: var(--h1-font);
+    margin-bottom: 0;
+}
+.hero h2 {
+    font-size: 42px;
+    font-family: var(--h2-font);
+    margin-bottom: 32px;
+    
+}
+.hero p {
+    color: var(--secondary-text-color);
+    font-size: 32px;
+    font-family: var(--main-font);
+    margin-bottom: 0;
+}
+.contact-btn {
+    background-color: var(--primary-color);
+    color: #FAEDF0;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 20px;
 }
