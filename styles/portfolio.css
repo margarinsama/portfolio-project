@@ -171,6 +171,21 @@ li {
     color: var(--text-color);
     font-size: 64px;
 }
+footer p{
+    padding: 25px 100px;
+    font-size: 13px;
+    font-family: var(--main-font);
+    color: var(--secondary-accent-color);
+}
+footer a {
+    color: var(--primary-accent-color);
+}
+footer a:hover {
+    color: var(--secondary-text-color);
+}
+.footer-about-portfolio {
+    text-align: center;
+}
 @media (max-width: 600px) {
     .hero {
         text-align: center;
