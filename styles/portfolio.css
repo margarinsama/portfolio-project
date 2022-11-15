@@ -52,9 +52,9 @@ li {
 }
 .contact-btn {
     background-color: var(--primary-accent-color);
-    color: #FAEDF0;
+    color: white;
     text-decoration: none;
-    padding: 6px 12px;
+    padding: 10px 20px;
     font-family: var(--main-font);
     font-weight: 600;
     font-size: 20px;
@@ -64,15 +64,15 @@ li {
 }
 
 .contact-btn:hover {
-    color: #FAEDF0;
+    color: white;
     background-color: var(--secondary-text-color);
 }
 
 .about-btn {
     background-color: var(--secondary-accent-color);
-    color: #FAEDF0;
+    color: white;
     text-decoration: none;
-    padding: 6px 12px;
+    padding: 10px 20px;
     font-family: var(--main-font);
     font-weight: 600;
     font-size: 20px;
@@ -82,7 +82,7 @@ li {
 }
 
 .about-btn:hover {
-    color: #FAEDF0;
+    color: white;
     background-color: var(--secondary-text-color);
 }
 
@@ -90,7 +90,7 @@ li {
     text-align: center;
     font-family: var(--h1-font);
     font-size: 64px;
-    color: var(--primary-accent-color);
+    color: var(--text-color);
 }
 
 .about-user h2, h3{
@@ -133,16 +133,23 @@ li {
     font-family: var(--main-font);
     font-weight: 500;
 }
-
+.contact-me a:hover {
+    color: var(--secondary-text-color);
+}
 .project-link {
     text-decoration: none;
-    padding: 8px 16px;
-    color: var(--primary-accent-color);
+    padding: 10px 20px;
+    color: white;
     font-family: var(--main-font);
     font-size: 20px;
-    border: solid 1px var(--primary-accent-color);
+    background: var(--primary-accent-color);
     border-radius: 4px;
     font-weight: 500;
+    transition: ease-in-out 0.4s;
+}
+.project-link:hover {
+    background: var(--secondary-text-color);
+    color: white;
 }
 .projects {
     text-align: center;
@@ -152,13 +159,16 @@ li {
     font-family: var(--h2-font);
     color: var(--text-color);
     margin-top: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
-
+.projects p {
+    font-family: var(--main-font);
+    color: var(--secondary-text-color);
+}
 .portfolio-title {
     font-family: var(--h1-font);
     text-align: center;
-    color: var(--primary-accent-color);
+    color: var(--text-color);
     font-size: 64px;
 }
 @media (max-width: 600px) {
